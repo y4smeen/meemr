@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-	retun "hey"
+	return "hey"
 
 @app.route("/memes/<emotion>")
 def get_meme_text(emotion):
@@ -22,4 +22,4 @@ def get_meme_text(emotion):
 
 if __name__ == "__main__":
 	app.debug = True
-	app.run(host="0.0.0.0", port=8000)
+	app.run(host='0.0.0.0')
